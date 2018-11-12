@@ -16,8 +16,8 @@ public class Point3d extends Point {
 		this.z = 0;
 	}
 
-	Point3d(int x, int y, int z) {
-		super(x, y);
+	Point3d(String name, int x, int y, int z) {
+		super(name, x, y);
 		this.z = z;
 	}
 

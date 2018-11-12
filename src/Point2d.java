@@ -5,8 +5,8 @@ public class Point2d extends Point {
 		super();
 	}
 
-	Point2d(int x, int y) {
-		super(x, y);
+	Point2d(String name, int x, int y) {
+		super(name, x, y);
 	}
 
 	public Double distance() {

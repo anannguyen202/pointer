@@ -3,14 +3,16 @@ public abstract class Point implements Print {
 
 	private int x;
 	private int y;
+	private String name;
 
 	Point() {
 		this.x = this.y = 0;
 	}
 
-	Point(int x, int y) {
+	Point(String name, int x, int y) {
 		this.x = x;
 		this.y = y;
+		this.name = name;
 	}
 
 	public abstract Double distance();
@@ -19,6 +21,10 @@ public abstract class Point implements Print {
 
 	public void print() {
 		System.out.println("Distance to Oxy: " + this.distance());
+	}
+	
+	public String getName() {
+		return name;
 	}
 
 	public int getX() {
